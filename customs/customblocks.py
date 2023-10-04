@@ -1,7 +1,7 @@
 import tensorflow as tf
 from keras import layers
 import tensorflow_addons as tfa
-from customlayers import Conv2DNoBias, ConvBN2D, MHSAWithMultiHeadRelativePositionEmbedding, DepthwiseConv2DNoBias
+from .customlayers import Conv2DNoBias, ConvBN2D, MHSAWithMultiHeadRelativePositionEmbedding, DepthwiseConv2DNoBias
 
 class SEBlock(layers.Layer):
     def __init__(self, se_ratio=0.25, divisor=8, limit_round_down=0.9, activation="relu", use_bias=True, use_conv=True, **kwargs):

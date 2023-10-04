@@ -5,7 +5,7 @@ tf.random.set_seed(1024)
 print(tf.config.list_physical_devices('GPU'))
 tf.config.LogicalDeviceConfiguration(memory_limit=1024*12)
 
-from model_utils import return_best_model
+from attention_models.model_utils import return_best_model
 
 
 from data import load_cifar100

@@ -1,5 +1,5 @@
 from keras import Model, layers
-from customblocks import ResidualBlock, STEMBlock, FFNBlock, MBConvBlock, MSHABlock, OutputBlock
+from customs.customblocks import ResidualBlock, STEMBlock, FFNBlock, MBConvBlock, MSHABlock, OutputBlock
 
 class CoAtNet(Model):
     def __init__(self, 

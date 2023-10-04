@@ -1,8 +1,8 @@
 from keras_tuner import BayesianOptimization
 from utils import plot_acc
 
-from models import CoAtNetHyperModel
-from customcallbacks import ValACCEarlyStopping
+from .models import CoAtNetHyperModel
+from customs.customcallbacks import ValACCEarlyStopping
 
 
 def return_best_model(input_shape, num_classes, train_set, val_set, search_epochs):

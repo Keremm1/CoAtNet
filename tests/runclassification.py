@@ -1,10 +1,10 @@
 import tensorflow as tf
-from models import CoAtNet
-from model_utils import evaluate_model
+from attention_models.models import CoAtNet
+from attention_models.model_utils import evaluate_model
 from tensorflow_addons.optimizers import AdamW
 from keras import losses, metrics, optimizers
 from tensorflow.keras.optimizers.schedules import CosineDecay
-from customcallbacks import ValACCEarlyStopping
+from customs.customcallbacks import ValACCEarlyStopping
 
 tf.random.set_seed(1024)
 print(tf.config.list_physical_devices('GPU'))
