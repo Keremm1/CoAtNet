@@ -203,7 +203,7 @@ class Conv2DNoBias(layers.Layer):
 
 class DepthwiseConv2DNoBias(layers.Layer):
     def __init__(self, kernel_size=1, strides=1, padding="valid", use_bias=False, use_torch_padding=True):
-        # Initialize the Conv2D layer with use_bias set to False
+        # use_bias parametresinin False olmasını zorlayan normal bir Conv2D katmanı, aynı zamanda Padding'i manuel olarak uygular
         super().__init__()      
         kernel_size = kernel_size if isinstance(kernel_size, tuple) else (kernel_size,kernel_size)
 
